@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using GameData;
+using GameTarget;
 using UnityEngine;
 using Zenject;
 
@@ -10,6 +11,7 @@ namespace GameGrid
         [Inject] private CellsFactory _cellsFactory;
         [Inject] private DifficultyData _difficultyData;
         [Inject] private SpriteSelector _spriteSelector;
+        [Inject] private Target _target;
 
         private GridTemplate _template;
         
@@ -44,6 +46,7 @@ namespace GameGrid
                 {
                     cell = new CorrectCell();
                     sprite = _spriteSelector.GetNecessarySprite();
+                    _target.Set(sprite.name);
                 }
                 else
                 {
