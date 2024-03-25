@@ -12,8 +12,9 @@ namespace GameGrid
     {
         [Inject] private SelectionService _selectionService;
 
-        [field: SerializeField] private Image _main;
-
+        [SerializeField] private Image _main;
+        [SerializeField] private ParticleSystem _star;
+        
         private ICell current;
         
         private CellAnimation _animation = new CellAnimation();
@@ -38,5 +39,7 @@ namespace GameGrid
             => _animation.PlayBounce(_main.transform, callback);
 
         public void PlayAppear() => _animation.PlayAppear(_main.transform);
+
+        public void PlayCorrect() => _star.Play();
     }
 }

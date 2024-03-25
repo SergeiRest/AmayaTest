@@ -24,6 +24,7 @@ namespace GameGrid.Cells
 
         public void Select(Action callback)
         {
+            _cellTemplate.PlayCorrect();
             _cellTemplate.AnimateMovement(() =>
             {            
                 callback?.Invoke();
