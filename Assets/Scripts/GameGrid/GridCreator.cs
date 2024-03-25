@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using DefaultNamespace.Finish;
 using GameData;
 using GameGrid.Cells;
 using GameTarget;
@@ -11,6 +12,7 @@ namespace GameGrid
     {
         [Inject] private DifficultyData _difficultyData;
         [Inject] private DiContainer _diContainer;
+        [Inject] private FinishBehavior _finishBehavior;
 
         private GridTemplate _template;
         private CellInitializer _cellInitializer;
@@ -39,6 +41,27 @@ namespace GameGrid
             _diContainer.Inject(_cellInitializer);
         }
         
+        public void Upgrade()
+        {
+            currentLevel++;
+
+            if (currentLevel >= _difficultyData.Difficulties.Length)
+            {
+                _finishBehavior.Show();
+                return;
+            }
+
+            Clear();
+            Generate();
+        }
+        
+        public void Dispose()
+        {
+            currentLevel = 0;
+            Clear();
+            Construct();
+        }
+        
         private void Generate()
         {
             var difficulty = _difficultyData.Difficulties[currentLevel];
@@ -50,17 +73,14 @@ namespace GameGrid
             _cellInitializer.Initialize(_cells, difficulty, _template.transform);
         }
 
-        public void Upgrade()
+        private void Clear()
         {
-            currentLevel++;
-
             foreach (var cell in _cells)
             {
                 cell.Dispose();
             }
             
             _cells.Clear();
-            Generate();
         }
     }
 

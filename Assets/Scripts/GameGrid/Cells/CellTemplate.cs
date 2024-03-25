@@ -28,6 +28,9 @@ namespace GameGrid
         {
             _main.sprite = sprite;
             current = cell;
+            
+            if(sprite.rect.width > sprite.rect.height)
+                _main.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -90));
         }
 
         public void Clear()
