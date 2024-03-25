@@ -12,6 +12,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f41bf138c02f45849f0915fc8e1a60c1, type: 3}
   m_Name: SpriteData
   m_EditorClassIdentifier: 
-  <Atlases>k__BackingField:
-  - {fileID: 4343727234628468602, guid: 5c17a28b6336c8641a21a7de5ffb5ac9, type: 2}
-  - {fileID: 4343727234628468602, guid: 061709c580bf0a74ba5224cfae838a7b, type: 2}
+  <Containers>k__BackingField:
+  - Configs:
+    - Sprite: {fileID: 1422184923334757970, guid: d25f991f07aca714b9e8197cacf1cf70, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 1808195818850983521, guid: d25f991f07aca714b9e8197cacf1cf70, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -7900951133411543555, guid: d25f991f07aca714b9e8197cacf1cf70, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -7398325283844340781, guid: d25f991f07aca714b9e8197cacf1cf70, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 2008176328888099268, guid: d25f991f07aca714b9e8197cacf1cf70, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -7015292045520539579, guid: d25f991f07aca714b9e8197cacf1cf70, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -675344402919758444, guid: d25f991f07aca714b9e8197cacf1cf70, type: 3}
+      rotation: {x: 0, y: 0, z: -90}
+    - Sprite: {fileID: 3547489320769246608, guid: d25f991f07aca714b9e8197cacf1cf70, type: 3}
+      rotation: {x: 0, y: 0, z: -90}
+    - Sprite: {fileID: -1155199509967091035, guid: 49cd28c52791d24449dd84f878c9a641, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 4142021021139464533, guid: ec3df0abc8f85c44cbe7fc7e351bf321, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+  - Configs:
+    - Sprite: {fileID: 4963718625464178563, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 7783457984840754399, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 3234300448368640894, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 7911670913450602933, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 4652326554734856401, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -6426668015567183463, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 216406037199867053, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -8235857483100294123, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -3541686595128163680, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -2756605603065543306, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -1127063002332224934, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -5901097786099144959, guid: 42bcb7e96f813b04bb23416cc4c34c26, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 7112752472869403061, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 5433449995169814141, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -4252152113809563852, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -4447791616812998045, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -6342808464625005154, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 8083504644574312765, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -4461999128152558772, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 3270655726746431581, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -2983290644488427326, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -9165466868132007793, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 4461586319009975920, guid: 1241e31cb0bff264485fd08fc9616454, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: -5001085640463096552, guid: 3e87f9f8b3ad1fa4e80a02475d5f7bfa, type: 3}
+      rotation: {x: 0, y: 0, z: 0}
+    - Sprite: {fileID: 3539555106843919260, guid: 3e87f9f8b3ad1fa4e80a02475d5f7bfa, type: 3}
+      rotation: {x: 0, y: 0, z: 0}

@@ -102,22 +102,22 @@ namespace GameGrid
                 CellTemplate cellModel = _cellsFactory.Get();
                 cellModel.transform.SetParent(parent);
                 
-                Sprite sprite = null;
+                SpriteConfig config;
 
                 if (i == correctPos)
                 {
                     cell = new CorrectCell(cellModel);
-                    sprite = _spriteSelector.GetNecessarySprite();
-                    _target.Set(sprite.name);
+                    config = _spriteSelector.GetNecessarySprite();
+                    _target.Set(config.Sprite.name);
                 }
                 else
                 {
                     cell = new IncorrectCell(cellModel);
-                    sprite = _spriteSelector.GetRandom();
+                    config = _spriteSelector.GetRandom();
                 }
                 
                 _diContainer.Inject(cell);
-                cellModel.Init(sprite, cell);
+                cellModel.Init(config.Sprite, cell, config.rotation);
                 cells.Add(cell);
             }
         }

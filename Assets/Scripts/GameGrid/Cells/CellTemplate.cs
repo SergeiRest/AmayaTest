@@ -24,13 +24,13 @@ namespace GameGrid
             _selectionService.Select(current);
         }
         
-        public void Init(Sprite sprite, ICell cell)
+        public void Init(Sprite sprite, ICell cell, Vector3 rotation)
         {
             _main.sprite = sprite;
             current = cell;
             
             if(sprite.rect.width > sprite.rect.height)
-                _main.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, -90));
+                _main.transform.localRotation = Quaternion.Euler(rotation);
         }
 
         public void Clear()

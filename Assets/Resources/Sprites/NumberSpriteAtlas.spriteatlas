@@ -46,7 +46,7 @@ SpriteAtlas:
     - {fileID: 2800000, guid: d25f991f07aca714b9e8197cacf1cf70, type: 3}
     - {fileID: 2800000, guid: 49cd28c52791d24449dd84f878c9a641, type: 3}
     - {fileID: 2800000, guid: ec3df0abc8f85c44cbe7fc7e351bf321, type: 3}
-    totalSpriteSurfaceArea: 1182365
+    totalSpriteSurfaceArea: 1145944
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -64,7 +64,7 @@ SpriteAtlas:
   - {fileID: 3547489320769246608, guid: d25f991f07aca714b9e8197cacf1cf70, type: 3}
   m_PackedSpriteNamesToIndex:
   - 9
-  - 10
+  - SD_NC_Cookies_3_0
   - 5
   - 4
   - 7

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using GameData;
 using UnityEngine;
@@ -11,38 +12,40 @@ namespace GameGrid
     {
         [Inject] private SpritesData _spritesData;
         
-        private List<Sprite> _availableSprites;
+        private List<SpriteConfig> _selectedData;
         private List<string> _selectedSprites = new List<string>();
 
         public void SelectAtlas(int length)
         {
-            var availableAtlases = _spritesData.Atlases.Where(atlas => atlas.spriteCount >= length).ToArray();
-            SpriteAtlas spriteAtlas = availableAtlases.GetRandomValue();
+            var availableAtlases = _spritesData.Containers.Where(container => container.Configs.Length >= length).ToArray();
+            SpriteContainer selected = availableAtlases.GetRandomValue();
 
-            Sprite[] sprites = new Sprite[spriteAtlas.spriteCount];
-            spriteAtlas.GetSprites(sprites);
+            //Sprite[] sprites = new Sprite[selected.SpriteDatas.Length];
 
-            _availableSprites = sprites.ToList();
+            SpriteConfig[] value = new SpriteConfig[selected.Configs.Length];
+            Array.Copy(selected.Configs, value, selected.Configs.Length);
+            
+            _selectedData = value.ToList();
         }
 
-        public Sprite GetNecessarySprite()
+        public SpriteConfig GetNecessarySprite()
         {
-            Sprite sprite = _availableSprites.Count > 0
-                ? _availableSprites.Where(cur => !_selectedSprites.Contains(cur.name)).ToList().GetRandomValue()
-                : _availableSprites.GetRandomValue();
+            SpriteConfig config = _selectedSprites.Count > 0
+                ? _selectedData.Where(cur => !_selectedSprites.Contains(cur.Sprite.name)).ToList().GetRandomValue()
+                : _selectedData.GetRandomValue();
             
-            _selectedSprites.Add(sprite.name);
-            _availableSprites.Remove(sprite);
-            
-            return sprite;
+            _selectedSprites.Add(config.Sprite.name);
+            _selectedData.Remove(config);
+
+            return config;
         }
 
-        public Sprite GetRandom()
+        public SpriteConfig GetRandom()
         {
-            Sprite sprite = _availableSprites.GetRandomValue();
-            _availableSprites.Remove(sprite);
+            SpriteConfig config = _selectedData.GetRandomValue();
+            _selectedData.Remove(config);
 
-            return sprite;
+            return config;
         }
     }
 }
