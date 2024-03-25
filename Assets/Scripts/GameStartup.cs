@@ -1,16 +1,16 @@
-﻿using UnityEngine;
+﻿using GameGrid;
+using UnityEngine;
 using Zenject;
-using Grid = GameGrid.Grid;
 
 namespace DefaultNamespace
 {
     public class GameStartup : MonoBehaviour
     {
-        [Inject] private Grid _grid;
+        [Inject] private GridCreator _gridCreator;
 
         private void Start()
         {
-            _grid.Generate();
+            _gridCreator.StartGame();
         }
     }
 }

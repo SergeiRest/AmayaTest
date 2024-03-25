@@ -11,8 +11,9 @@ namespace GameGrid
         public override void InstallBindings()
         {
             Container.BindInterfacesAndSelfTo<CellsFactory>().FromNew().AsSingle().WithArguments(_cellTemplate).NonLazy();
-            Container.BindInterfacesAndSelfTo<Grid>().FromNew().AsSingle().WithArguments(_gridTemplate).NonLazy();
+            Container.BindInterfacesAndSelfTo<GridCreator>().FromNew().AsSingle().WithArguments(_gridTemplate).NonLazy();
             Container.BindInterfacesAndSelfTo<SpriteSelector>().FromNew().AsSingle().NonLazy();
+            Container.BindInterfacesAndSelfTo<UpgradeService>().FromNew().AsSingle().NonLazy();
         }
     }
 }

@@ -16,7 +16,7 @@ TextureImporter:
     second: 4
   - first:
       213: 2267071060405275165
-    second: 5
+    second: 4
   - first:
       213: -7015292045520539579
     second: 6
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 4
+      name: 5
       rect:
         serializedVersion: 2
         x: 746
@@ -199,10 +199,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5
+      name: 4
       rect:
         serializedVersion: 2
-        x: 5
+        x: 3
         y: 224
         width: 303
         height: 395

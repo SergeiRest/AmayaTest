@@ -14,10 +14,10 @@ namespace GameGrid
         private List<Sprite> _availableSprites;
         private List<string> _selectedSprites = new List<string>();
 
-        public void SelectAtlas()
+        public void SelectAtlas(int length)
         {
-            int selectedAtlas = Random.Range(0, _spritesData.Atlases.Length);
-            SpriteAtlas spriteAtlas = _spritesData.Atlases[selectedAtlas];
+            var availableAtlases = _spritesData.Atlases.Where(atlas => atlas.spriteCount >= length).ToArray();
+            SpriteAtlas spriteAtlas = availableAtlases.GetRandomValue();
 
             Sprite[] sprites = new Sprite[spriteAtlas.spriteCount];
             spriteAtlas.GetSprites(sprites);

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Atlases>k__BackingField:
   - {fileID: 4343727234628468602, guid: 5c17a28b6336c8641a21a7de5ffb5ac9, type: 2}
+  - {fileID: 4343727234628468602, guid: 061709c580bf0a74ba5224cfae838a7b, type: 2}
