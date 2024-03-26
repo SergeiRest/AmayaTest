@@ -1,8 +1,8 @@
-﻿using DefaultNamespace.UI;
+﻿using UI;
 using UnityEngine;
 using Zenject;
 
-namespace DefaultNamespace.Finish
+namespace Finish
 {
     public class FinishInstaller : MonoInstaller
     {

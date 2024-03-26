@@ -1,9 +1,9 @@
-﻿using DefaultNamespace.UI;
+﻿using UI;
 using GameGrid;
 using GameTarget;
 using Zenject;
 
-namespace DefaultNamespace.Finish
+namespace Finish
 {
     public class FinishBehavior
     {

@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using DefaultNamespace.Finish;
+using Finish;
 using GameData;
 using GameGrid.Cells;
 using GameTarget;

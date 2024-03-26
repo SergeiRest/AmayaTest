@@ -1,10 +1,10 @@
-﻿using DefaultNamespace.Finish;
+﻿using Finish;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace DefaultNamespace.UI
+namespace UI
 {
     public class FinishScreenTemplate : MonoBehaviour
     {
